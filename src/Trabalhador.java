@@ -4,12 +4,12 @@ import java.util.Calendar;
 
 public class Trabalhador {
 
-    private String name;
+    private String nome;
     private NivelDeCargo nivelCargo;
     private double salarioBase;
    //associações
     private Departamento departamento;
-    private List<ContratoPorHora> contratos;
+    private List<ContratoPorHora> contratos = new ArrayList<>();
 
     public Trabalhador(){
     }
@@ -18,14 +18,14 @@ public class Trabalhador {
         this.nivelCargo = nivelCargo;
         this.salarioBase = salarioBase;
         this.departamento = departamento;
-        contratos = new ArrayList<>();
+
     }
 
     public String getName() {
-        return name;
+        return nome;
     }
     public void setName(String name) {
-        this.name = name;
+        this.nome = nome;
     }
 
     public double getSalarioBase() {
@@ -65,7 +65,7 @@ public class Trabalhador {
         double soma = salarioBase;
         Calendar cal = Calendar.getInstance();
         for(ContratoPorHora c: contratos){
-            cal.setTime(c.getData));
+            cal.setTime(c.getData());
             int c_ano = cal.get(Calendar.YEAR);
             int c_mes = 1+ cal.get(Calendar.MONTH);
 

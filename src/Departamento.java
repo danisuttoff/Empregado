@@ -9,7 +9,7 @@ public class Departamento {
      }
 
      public String getNome(){
-        return name;
+        return nome;
      }
 
      public void setNome(String nome){
