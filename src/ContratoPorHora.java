@@ -1,5 +1,6 @@
 
 import java.util.Date;
+
 public class ContratoPorHora {
 
     private Date data;
@@ -17,17 +18,34 @@ public class ContratoPorHora {
 
     }
 
-    public Date getData() {return data;}
-    public void setData(Date date){ this.data = date;}
-
-
-    public Double getValorPorHora(){return valorPorHora;}
-    public void setValorPorHora(Double valorPorHora){this.valorPorHora = valorPorHora;}
-
-    public Integer getHora(){return hora;}
-    public void setHora(Integer hora){this.hora = hora;}
-
-    public double valorTotal(){
-        return valorPorHora*hora;
+    public Date getData() {
+        return data;
     }
+
+    public void setData(Date date) {
+        this.data = date;
+    }
+
+
+    public Double getValorPorHora() {
+        return valorPorHora;
+    }
+
+    public void setValorPorHora(Double valorPorHora) {
+        this.valorPorHora = valorPorHora;
+    }
+
+    public Integer getHora() {
+        return hora;
+    }
+
+    public void setHora(Integer hora) {
+        this.hora = hora;
+    }
+
+    public double valorTotal() {
+        return valorPorHora * hora;
+    }
+
+
 }
